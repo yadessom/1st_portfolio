@@ -21,7 +21,7 @@ $(function(){
 		$('.full_menu').toggleClass('on');
 		$('.blackout').toggleClass('on');
     });
-	$('.blackout').mouseenter(function(){
+	$('.blackout').click(function(){
 		$('.line').toggleClass('on');
 		$('.full_menu').toggleClass('on');
 		$('.blackout').toggleClass('on');
