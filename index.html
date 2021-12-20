@@ -7,8 +7,10 @@
     <title>포트폴리오</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/all.js"></script>
     <script src="js/jquery.fullpage.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -58,18 +60,87 @@
     <!-- ******************************************************* -->
     <main id="fullpage">
         <div class="section home">
+            <!-- <img src="images/title.png" alt="이창규의 포트폴리오"> -->
+            <div class="title">
+                <div class="tit_top">
+                    <button class="circle_01">
+
+                    </button>
+                    <button class="circle_02">
+                        <a href="#about"></a>
+                    </button>
+                    <button class="circle_03">
+                        <a href="#about"></a>
+                    </button>
+                    <p>portfolio</p>
+                </div>
+                <div class="tit_mid">
+                    <h2>
+                        <span class="fuc">function</span> <span class="des">design</span>(){<span>LeeChangGyu</span>;}
+                    </h2>
+                </div>
+                <div class="tit_bottom">
+                    <p>WEB DESIGN / HTML, CSS, Javascript , Jquery</p>
+                </div>
+            </div>
+            <div class="home_back">
+            </div>
             <h1>HOME</h1>
         </div>
-        <div class="section"><h1>ABOUT</h1></div>
+        <div class="section about">
+            <h1>ABOUT</h1>
+            <div class="about_back">
+                <div class="about_pic">
+                    
+                </div>
+                <h3>Profile</h3>
+                <p>
+                    · 이창규<br>
+                    · 1985년 9월 14일<br>
+                    · 서울 중랑구 면목동 거주<br>
+                    · yadess@naver.com
+                </p>
+            </div>
+        </div>
         <div class="section web"><h1>WEB</h1></div>
         <div class="section"><h1>MOBILE</h1></div>
         <div class="section"><h1>RESPONSIVE</h1></div>
         <div class="section graphic"><h1>GRAPHIC<br>DESIGN</h1></div>
         <div class="section contact">
             <h1>CONTACT</h1>
-            <div class="txt_wrap">
-                <h4>abcd@naver.com</h4>
-                <p>010-1234-5678</p>
+            <div class="contact_inner">
+                <div class="contact_left">
+                    <ul class="txt">
+                        <li><i class="fas fa-map-marker-alt"></i> 서울시 중랑구 면목동</li>
+                        <li><i class="fas fa-phone-alt"></i> 010-0000-0000</li>
+                        <li><i class="fas fa-envelope"></i> abcd@naver.com</li>
+                    </ul>
+                    <form action="">
+                        <fieldset>
+                            <legend>contact</legend>
+                            <div class="name">
+                                <label>NAME</label>
+                                <input type="text" placeholder="이름을 입력해주세요">
+                            </div>
+                            <div class="mail">
+                                <label>Mail</label>
+                                <input type="text" placeholder="이메일을 입력해주세요">
+                            </div>
+                            <div class="msg">
+                                <label>Mail</label>
+                                <textarea class="msg_box">내용을 입력해주세요</textarea>
+                            </div>
+                            <button type="submit" class="send">Send Message</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="map">
+                    <div class="map_canvas">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.029988602078!2d127.0784385155892!3d37.60145322988489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbbd062ea0c63%3A0x75db50dd12399ce!2z64yA7Jqw7KeB7JeF64ql66Cl6rCc67Cc7JuQ!5e0!3m2!1sko!2skr!4v1639981202892!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         

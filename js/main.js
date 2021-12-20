@@ -11,21 +11,32 @@ $(function(){
 		afterLoad: function(anchorLink, index){
 			console.log("현재섹션=" + index);
 			
+			if(index == 1){
+				
+			}
 		}
-		
 	});
-
 	// *************************************************************
 	$('.m_btn').click(function(){
         $('.line').toggleClass('on');
 		$('.full_menu').toggleClass('on');
 		$('.blackout').toggleClass('on');
+		$('.title').fadeIn(500);
     });
 	$('.blackout').click(function(){
 		$('.line').toggleClass('on');
 		$('.full_menu').toggleClass('on');
 		$('.blackout').toggleClass('on');
 	});
-	
+	// *************************************************************
+	$('.circle_01').click(function(){
+		$('.title').fadeOut(200);
+	});
+	// *************************************************************
+	// $(window).scroll(function(){
+	// 	var num = $(document).scrollTop();
+	// 	console.log(num);
+
+	// });
 
 });
