@@ -31,7 +31,13 @@ $(function(){
 				$('.w_box_01').removeClass('on');
 				$('.w_box_02').removeClass('on');
 				$('.w_box_03').removeClass('on');
-				$('.w_box_04').removeClass('on');			}
+				$('.w_box_04').removeClass('on');			
+			}
+			if(index == 4){
+				$('.mobile_back').addClass('on');
+			}else{
+				$('.mobile_back').removeClass('on');
+			}
 		}
 	});
 	// *************************************************************
