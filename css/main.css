@@ -324,13 +324,13 @@ header ul li a{
 .about_right{
     position: absolute;
     left:45%;
-    top: 176px;
+    top: 15%;
     width: 45%;
     height: 65%;
 }
 .about_right img{
     width: 164px;
-    margin-bottom: 141px;
+    margin-bottom: 10%;
 }
 .about_s_t{
     top: 0;
@@ -396,7 +396,10 @@ header ul li a{
     display: flex;
     justify-content: space-between;
 }
-.web_box_wrap li:hover .web_box_bottom{
+/* .web_box_wrap li:hover .web_box_bottom{
+    height: 100%;
+} */
+.web_box_wrap li .web_box:hover .web_box_bottom{
     height: 100%;
 }
 .web_box{
