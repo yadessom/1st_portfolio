@@ -157,6 +157,7 @@ header ul li a{
 /* *********************************************** */
 .home{
     position: relative;
+    z-index: 999;
 }
 .title{
     width: 975px;
@@ -274,6 +275,7 @@ header ul li a{
 .about{
     position: relative;
     overflow: hidden;
+    z-index: 888;
 }
 .about_txt{
     position: absolute;
