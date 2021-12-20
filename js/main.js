@@ -22,6 +22,16 @@ $(function(){
 			}else{
 				$('.about_back').removeClass('on');
 			}
+			if(index == 3){
+				$('.w_box_01').addClass('on');
+				$('.w_box_02').addClass('on');
+				$('.w_box_03').addClass('on');
+				$('.w_box_04').addClass('on');
+			}else{
+				$('.w_box_01').removeClass('on');
+				$('.w_box_02').removeClass('on');
+				$('.w_box_03').removeClass('on');
+				$('.w_box_04').removeClass('on');			}
 		}
 	});
 	// *************************************************************
@@ -42,11 +52,7 @@ $(function(){
 		$('.title').fadeOut(200);
 	});
 	// *************************************************************
-	// $(window).scroll(function(){
-	// 	var num = $(document).scrollTop();
-	// 	console.log(num);
-
-	// });
+	
 
 
 });
