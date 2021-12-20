@@ -12,7 +12,15 @@ $(function(){
 			console.log("현재섹션=" + index);
 			
 			if(index == 1){
-				
+				$('.title').addClass('on');
+			}else{
+				$('.title').removeClass('on');
+				$('.title').show();
+			}
+			if(index == 2){
+				$('.about_back').addClass('on');
+			}else{
+				$('.about_back').removeClass('on');
 			}
 		}
 	});
@@ -21,12 +29,13 @@ $(function(){
         $('.line').toggleClass('on');
 		$('.full_menu').toggleClass('on');
 		$('.blackout').toggleClass('on');
-		$('.title').fadeIn(500);
+		$('.title').show(1000);
     });
 	$('.blackout').click(function(){
 		$('.line').toggleClass('on');
 		$('.full_menu').toggleClass('on');
 		$('.blackout').toggleClass('on');
+		$('.title').show(1000);
 	});
 	// *************************************************************
 	$('.circle_01').click(function(){
@@ -38,5 +47,6 @@ $(function(){
 	// 	console.log(num);
 
 	// });
+
 
 });
