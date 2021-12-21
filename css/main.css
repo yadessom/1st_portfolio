@@ -599,9 +599,9 @@ header ul li a{
 .m_box_all.on{
     animation: m_box_ani 1.5s ease forwards;
 }
-/* .m_box_remove.on{
+.m_box_all.remove{
     animation: m_box_ani_remove 1.5s ease forwards;
-} */
+}
 @keyframes m_box_ani{
     0%{left: -100%;}
     50%{left:40%}

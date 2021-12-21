@@ -76,7 +76,12 @@ $(function(){
 	// *************************************************************
 	$('.mobile_list li').mouseenter(function(){
 		let num = $(this).index();
+		$('.m_box_all').removeClass('remove')
 		$('.m_box_all').eq(num).addClass('on').siblings().removeClass('on');
+	});
+	$('.mobile_list li').mouseleave(function(){
+		let num = $(this).index();
+		$('.m_box_all').eq(num).addClass('remove').siblings().removeClass('remove');
 	});
 
 
