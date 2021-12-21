@@ -157,7 +157,6 @@ header ul li a{
 /* *********************************************** */
 .home{
     position: relative;
-    z-index: 999;
 }
 .title{
     width: 975px;
@@ -275,7 +274,6 @@ header ul li a{
 .about{
     position: relative;
     overflow: hidden;
-    z-index: 888;
 }
 .about_txt{
     position: absolute;
@@ -305,7 +303,7 @@ header ul li a{
     box-sizing: border-box;
 }
 .about_back.on{
-    animation: about_ani 0.3s ease forwards;
+    animation: about_ani 0.5s ease forwards;
 }
 @keyframes about_ani{
     0%{top: -100%;}
@@ -317,11 +315,19 @@ header ul li a{
     border-radius: 100%;
     border: 13px solid #fff;
     position: absolute;
-    top: 10%;
-    /* margin-top: 180px; */
+    top: -150%;
     margin-bottom: 118px;
     box-sizing: border-box;
     box-shadow: 30px 30px 50px rgba(0,0,0,.2);
+    z-index: 10;
+}
+.about_pic.on{
+    animation: about_pic_ani 1.5s ease forwards;
+}
+@keyframes about_pic_ani{
+    0%{top: -100%;}
+    50%{top:20%}
+    100%{top: 10%;}
 }
 .about_right{
     position: absolute;
@@ -398,9 +404,6 @@ header ul li a{
     display: flex;
     justify-content: space-between;
 }
-/* .web_box_wrap li:hover .web_box_bottom{
-    height: 100%;
-} */
 .web_box_wrap li .web_box:hover .web_box_bottom{
     height: 100%;
 }
@@ -421,7 +424,7 @@ header ul li a{
     top: -150%;
 }
 .w_box_01.on{
-    animation: web_box_ani_01 0.5s ease forwards;
+    animation: web_box_ani_01 1s ease forwards;
 }
 @keyframes web_box_ani_01{
     0%{top: -150%;}
@@ -432,7 +435,7 @@ header ul li a{
     top: -150%;
 }
 .w_box_02.on{
-    animation: web_box_ani_01 1s ease forwards;
+    animation: web_box_ani_01 1.5s ease forwards;
 }
 @keyframes web_box_ani_02{
     0%{top: -150%;}
@@ -443,7 +446,7 @@ header ul li a{
     top: -150%;
 }
 .w_box_03.on{
-    animation: web_box_ani_01 1.5s ease forwards;
+    animation: web_box_ani_01 2s ease forwards;
 }
 @keyframes web_box_ani_03{
     0%{top: -150%;}
@@ -454,7 +457,7 @@ header ul li a{
     top: -150%;
 }
 .w_box_04.on{
-    animation: web_box_ani_01 2s ease forwards;
+    animation: web_box_ani_01 2.5s ease forwards;
 }
 @keyframes web_box_ani_04{
     0%{top: -150%;}
@@ -513,7 +516,7 @@ header ul li a{
     background:linear-gradient(to top,#0D0D12, #3F4259);
 }
 .mobile_back.on{
-    animation: mobile_ani 0.3s ease forwards;
+    animation: mobile_ani 0.5s ease forwards;
 }
 @keyframes mobile_ani{
     0%{left: -100%;}
@@ -528,10 +531,18 @@ header ul li a{
 .mobile_box_01{
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: -150%;
     width: 304px;
     height: auto;
     border:1px solid #fff;
+}
+.mobile_box_01.on{
+    animation: mobile_box_ani 1s ease forwards;
+}
+@keyframes mobile_box_ani{
+    0%{left: -150%;}
+    50%{left:60%}
+    100%{left: 30%;}
 }
 .mobile_box_01 img{
     width: 100%;

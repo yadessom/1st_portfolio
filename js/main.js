@@ -19,8 +19,10 @@ $(function(){
 			}
 			if(index == 2){
 				$('.about_back').addClass('on');
+				$('.about_pic').addClass('on');
 			}else{
 				$('.about_back').removeClass('on');
+				$('.about_pic').removeClass('on');
 			}
 			if(index == 3){
 				$('.w_box_01').addClass('on');
@@ -35,8 +37,10 @@ $(function(){
 			}
 			if(index == 4){
 				$('.mobile_back').addClass('on');
+				$('.mobile_box_01').addClass('on');
 			}else{
 				$('.mobile_back').removeClass('on');
+				$('.mobile_box_01').removeClass('on');
 			}
 		}
 	});
