@@ -415,7 +415,7 @@ header ul li a{
     padding: 59px 44px 0 44px;
     box-sizing: border-box;
     position: relative;
-    box-shadow: 30px 30px 40px rgba(0,0,0,.2);
+    box-shadow: 30px 30px 40px rgba(0,0,0,.3);
     overflow: hidden;
     transform: scale(70%);
 }
@@ -507,6 +507,26 @@ header ul li a{
 .mobile{
     position: relative;
 }
+.mobile h3{
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.mobile p{
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgba(255,255,255,.4);
+}
+.mobile h4{
+    float:right;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255,255,255,.6);
+    text-align: right;
+}
 .mobile_back{
     position: absolute;
     left: -100%;
@@ -526,15 +546,39 @@ header ul li a{
     position: absolute;
     width: 164px;
     left: 30%;
-    top: 10%;
+    top: 7%;
 }
 .mobile_box_01{
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: -150%;
     width: 304px;
     height: auto;
-    border:1px solid #fff;
+    /* border:1px solid #fff; */
+}
+.mobile_box_02{
+    position: absolute;
+    top: 17%;
+    left: -150%;
+    width: 304px;
+    height: auto;
+    /* border:1px solid #fff; */
+}
+.mobile_box_03{
+    position: absolute;
+    top: 17%;
+    left: -150%;
+    width: 304px;
+    height: auto;
+    /* border:1px solid #fff; */
+}
+.mobile_box_04{
+    position: absolute;
+    top: 17%;
+    left: -150%;
+    width: 304px;
+    height: auto;
+    /* border:1px solid #fff; */
 }
 .mobile_box_01.on{
     animation: mobile_box_ani 1s ease forwards;
@@ -544,8 +588,21 @@ header ul li a{
     50%{left:60%}
     100%{left: 30%;}
 }
-.mobile_box_01 img{
+.m_box_all img{
     width: 100%;
+    box-shadow: 20px 20px 20px rgba(0,0,0,.5);
+}
+.mobile_box_l{
+    width:48%;
+    margin-top: 26px;
+    /* border: 1px solid red; */
+    float:left;
+}
+.mobile_box_r{
+    width: 48%;
+    margin-top: 33px;
+    /* border: 1px solid red; */
+    float:right;
 }
 /* *********************************************** */
 .copy{
