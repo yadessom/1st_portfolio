@@ -52,7 +52,18 @@ header ul li a{
     left:50px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99;
+    /* z-index: 99; */
+    z-index: 79;
+    transform: scale(1.5);
+}
+.m_btn.on{
+    animation: m_btn_ani 1.5s ease forwards;
+    transform: scale(2);
+}
+@keyframes m_btn_ani{
+    0%{left:50px;}
+    50%{left:80%}
+    100%{left:78%}
 }
 .m_btn .line{
     display: block;
@@ -115,6 +126,11 @@ header ul li a{
     transition: all 0.5s ease;
     text-align: right;
 }
+.full_menu img{
+    width: 180px;
+    float:left;
+    margin-top: 20%;
+}
 .full_menu.on{
     left:0;
 }
@@ -137,6 +153,8 @@ header ul li a{
     left: -15%;
     top: 50%;
     transform: translateY(-50%);
+    background:chartreuse;
+    border-radius: 100px;
     transition: all 0.3s ease;
     z-index: -1;
 }
@@ -250,6 +268,25 @@ header ul li a{
 .tit_mid h2 span{
     font-size: 77px;
     color: #C1FB39;
+}
+.tit_mid h3{
+    font-size: 42px;
+    font-weight: bold;  
+    color:rgba(255,255,255,.5);
+    padding-top: 145px;
+    margin-bottom: 20px;
+    line-height: 70px;
+}
+.c_span_01{
+    color:#C1FB39;
+}
+.c_span_02{
+    color: #a786cf;
+}
+.tit_mid p{
+    font-size: 42px;
+    font-weight: bold;  
+    color:#fff;
 }
 .tit_bottom{
     width: 100%;
@@ -534,13 +571,16 @@ header ul li a{
     width: 32%;
     height: 100%;
     background:linear-gradient(to top,#0D0D12, #3F4259);
+    box-shadow: 20px 0 20px rgba(0,0,0,.3);
+    z-index: 80;
 }
 .mobile_back.on{
-    animation: mobile_ani 0.5s ease forwards;
+    animation: mobile_ani 1s ease forwards;
 }
 @keyframes mobile_ani{
     0%{left: -100%;}
-    100%{left: 0;}
+    50%{left:0; width:42%;}
+    100%{left: 0; width:32%;}
 }
 .mobile_logo{
     position: absolute;
@@ -548,61 +588,134 @@ header ul li a{
     left: 30%;
     top: 7%;
 }
-.mobile_box_01{
+/* *********************************************** */
+.m_box_all{
     position: absolute;
     top: 17%;
-    left: -150%;
+    left: -100%;
     width: 304px;
     height: auto;
-    /* border:1px solid #fff; */
 }
-.mobile_box_02{
-    position: absolute;
-    top: 17%;
-    left: -150%;
-    width: 304px;
-    height: auto;
-    /* border:1px solid #fff; */
+.m_box_all.on{
+    animation: m_box_ani 1.5s ease forwards;
 }
-.mobile_box_03{
-    position: absolute;
-    top: 17%;
-    left: -150%;
-    width: 304px;
-    height: auto;
-    /* border:1px solid #fff; */
-}
-.mobile_box_04{
-    position: absolute;
-    top: 17%;
-    left: -150%;
-    width: 304px;
-    height: auto;
-    /* border:1px solid #fff; */
-}
-.mobile_box_01.on{
-    animation: mobile_box_ani 1s ease forwards;
-}
-@keyframes mobile_box_ani{
-    0%{left: -150%;}
-    50%{left:60%}
+/* .m_box_remove.on{
+    animation: m_box_ani_remove 1.5s ease forwards;
+} */
+@keyframes m_box_ani{
+    0%{left: -100%;}
+    50%{left:40%}
     100%{left: 30%;}
 }
+@keyframes m_box_ani_remove{
+    0%{left: 30%;}
+    100%{left: -100%;}
+}
+/* *********************************************** */
+.mobile_list{
+    position: absolute;
+    width: 47%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    left:35%;
+    top: 40%;
+    border:1px solid #fff;
+}
+.mobile_list li{
+
+}
+.mobile_icon{
+    width: 155px;
+    height: 155px;
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.mobile_icon img{
+    width: 100%;
+}
+/* *********************************************** */
+.m_icon_01{
+    position: absolute;
+    left: -100%;
+}
+.m_icon_02{
+    position: absolute;
+    left: -100%;
+}
+.m_icon_03{
+    position: absolute;
+    left: -100%;
+}
+.m_icon_04{
+    position: absolute;
+    left: -100%;
+}
+.m_icon_01.on{
+    animation: m_icon_ani_01 1s ease forwards;
+}
+.m_icon_02.on{
+    animation: m_icon_ani_02 1.3s ease forwards;
+}
+.m_icon_03.on{
+    animation: m_icon_ani_03 1.6s ease forwards;
+}
+.m_icon_04.on{
+    animation: m_icon_ani_04 1.9s ease forwards;
+}
+@keyframes m_icon_ani_01{
+    0%{left: -100%;}
+    50%{left:10%}
+    100%{left:0;}
+}
+@keyframes m_icon_ani_02{
+    0%{left: -100%;}
+    50%{left:36%}
+    100%{left:26%;}
+}
+@keyframes m_icon_ani_03{
+    0%{left: -100%;}
+    50%{left:65%}
+    100%{left:55%;}
+}
+@keyframes m_icon_ani_04{
+    0%{left: -100%;}
+    50%{left:93%}
+    100%{left:83%;}
+}
+/* *********************************************** */
 .m_box_all img{
     width: 100%;
-    box-shadow: 20px 20px 20px rgba(0,0,0,.5);
+    box-shadow: 20px 20px 20px rgba(0,0,0,.3);
 }
 .mobile_box_l{
     width:48%;
     margin-top: 26px;
-    /* border: 1px solid red; */
     float:left;
 }
 .mobile_box_r{
     width: 48%;
     margin-top: 33px;
-    /* border: 1px solid red; */
     float:right;
+}
+/* *********************************************** */
+.mobile_txt{
+    position: absolute;
+    left:35%;
+    top: 20%;
+}
+.mobile_txt h6{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.mobile_txt h7{
+    font-size: 1.75em;
+    font-weight: bold;
+    color: rgba(255,255,255,.6);
+    line-height: 48px;
 }
 /* *********************************************** */
 .copy{
@@ -617,80 +730,7 @@ header ul li a{
 .contact{
     position: relative;
 }
-.contact_inner{
-    width: 1200px;
-    height: 864px;
-    margin: 0 auto;
-    padding: 80px 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-/* *********************************************** */
-form{
-    width: 50%;
-    height: auto;
-    float:left;
-    box-sizing: border-box;
-}
-.txt{
-    margin-bottom: 40px;
-}
-.txt li{
-    line-height: 40px;
-    font-size: 25px;
-    color: #fff;
-}
-fieldset label{
-    font-size: 15px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 15px;
-    color: #fff;
-}
-fieldset legend{
-    text-indent: -99999px;
-}
-fieldset input{
-    width: 517px;
-    height: 30px;
-    margin-bottom: 40px;
-    border: 1px solid #cbcbcb;
-    background: rgba(255,255,255,.5);
-    text-indent: 7px;
-    outline: none;
-}
-fieldset input::placeholder{
-    color:#f3f3f3;
-}
-.msg_box{
-    width: 517px;
-    height: 90px;
-    text-indent: 7px;
-    border: 1px solid #cbcbcb;
-    background: rgba(255,255,255,.5);
-    margin-bottom: 67px;
-    color:#f3f3f3;
-    outline: none;
-}
-.send{
-    width: 230px;
-    height: 40px;
-    border:1px solid #c8c8c8;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    background: rgba(255,255,255,.5);
-    color: #fff;
-}
-.map{
-    width: 50%;
-    height: 550px;
-    float:right;
-    box-sizing: border-box;
-}
-.map_canvas iframe{
-    width: 100%;
-}
+
 /* *********************************************** */
 .copy{
     margin-top: 10px;
