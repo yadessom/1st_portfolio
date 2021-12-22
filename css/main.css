@@ -574,17 +574,6 @@ header ul li a{
 .mobile_back.on{
     animation: mobile_ani 1s ease forwards;
 }
-.mobile_back span{
-    color:#fff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 45%;
-    opacity: .3;
-}
 @keyframes mobile_ani{
     0%{left: -100%;}
     50%{left:0; width:42%;}
@@ -602,7 +591,18 @@ header ul li a{
     width: 100px;
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 40%;
+}
+.mobile_back span{
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55%;
+    opacity: .3;
 }
 /* *********************************************** */
 .m_box_all{
@@ -693,7 +693,7 @@ header ul li a{
 @keyframes m_icon_ani_02{
     0%{left: -100%;}
     50%{left:37%}
-    100%{left:27%;}
+    100%{left:27.5%;}
 }
 @keyframes m_icon_ani_03{
     0%{left: -100%;}
@@ -739,19 +739,38 @@ header ul li a{
     line-height: 48px;
 }
 /* *********************************************** */
-.respon{
-
+.res{
+    position: relative;
 }
-.respon_back{
+.res_txt{
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    z-index: 2;
+}
+.res_txt h6{
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.res_txt h7{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(255,255,255,.6);
+    line-height: 48px;
+}
+.res_back{
     background:url("../images/web_back.png")no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
     transform: scaleX(-1);
+    z-index: 2;
 }
 /* *********************************************** */
-.graphic{
-
+.gra{
+    position: relative;
 }
 /* *********************************************** */
 .contact{
