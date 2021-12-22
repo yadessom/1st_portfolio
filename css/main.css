@@ -743,6 +743,7 @@ header ul li a{
 /* *********************************************** */
 .res{
     position: relative;
+    overflow: hidden;
 }
 .res_txt{
     position: absolute;
@@ -778,46 +779,58 @@ header ul li a{
     left: 8%;
     bottom: 0;
     z-index: 10;
-    border: 1px solid chartreuse;
     display: flex;
     justify-content: space-between;
 }
 .res_list li{
     width: 30%;
     height: 100%;
+    float: left;
 }
 .res_box{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     border-radius: 20px 20px 0 0;
     box-shadow: 20px 20px 20px rgba(0,0,0,.3);
+
+    margin-top: 160%;
+    transition: all 0.5s ease;
+}
+.res_box.on{
+    animation: res_box_ani 1s ease forwards;
 }
 .res_box_top{
     width: 100%;
     height: 50%;
     background:linear-gradient(to top, #4E4E4E, #9B9B9B);
     border-radius: 20px 20px 0 0;
+    text-align: center;
+    padding-top: 10%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
-.res_box_bottom{
+.res_box_top img{
+    width: 80%;
+    display: inline-block;
+}
+.res_box_mid{
     width: 100%;
-    height: 50%;
+    height: 25%;
     background: #fff;
     padding: 8%;
     box-sizing: border-box;
-    border: 1px solid blue;
 }
-.res_box_bottom h3{
+.res_box_mid h3{
     font-size: 20px;
     font-weight: bold;
     line-height: 25px;
     display: inline-block;
     color: #101010;
 }
-.res_box_bottom h3 span{
+.res_box_mid h3 span{
     opacity: .5;
 }
-.res_box_bottom p{
+.res_box_mid p{
     font-size: 15px;
     font-weight: bold;
     line-height: 15px;
@@ -826,10 +839,44 @@ header ul li a{
     color: #101010;
     opacity: .5;
     font-weight: bold;
+    text-align: right;
+}
+.res_box_bottom{
+    width: 100%;
+    height: 25%;
+    background: #fff;
+    text-align: center;
 }
 .res_box_bottom img{
-    display: block;
+    display: inline-block;
     width: 90px;
+}
+/* *********************************************** */
+.res_box_01{
+    margin-top: 160%;
+    transition: all 0.5s ease;
+}
+.res_box_02{
+    margin-top: 160%;
+    transition: all 0.5s ease;
+}
+.res_box_03{
+    margin-top: 160%;
+    transition: all 0.5s ease;
+}
+@keyframes res_box_ani{
+    0%{margin-top: 160%;}
+    50%{margin-top:10%}
+    100%{margin-top:50%}
+}
+.res_box_01.on:hover{
+    margin-top: 0;
+}
+.res_box_02.on:hover{
+    margin-top: 0;
+}
+.res_box_03.on:hover{
+    margin-top: 0;
 }
 /* *********************************************** */
 .gra{

@@ -50,6 +50,11 @@ $(function(){
 				$('.m_icon_03').removeClass('on');
 				$('.m_icon_04').removeClass('on');
 			}
+			if(index ==5){
+				$('.res_box').addClass('on');
+			}else{
+				$('.res_box').removeClass('on');
+			}
 
 
 		}
