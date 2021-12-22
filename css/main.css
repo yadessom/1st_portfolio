@@ -771,6 +771,53 @@ header ul li a{
     z-index: 2;
 }
 /* *********************************************** */
+.res_list{
+    width: 69%;
+    height: 65%;
+    position: absolute;
+    left: 8%;
+    bottom: 0;
+    z-index: 10;
+    border: 1px solid chartreuse;
+    display: flex;
+    justify-content: space-between;
+}
+.res_list li{
+    width: 30%;
+    height: 100%;
+}
+.res_box{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 20px 20px 20px rgba(0,0,0,.3);
+}
+.res_box_top{
+    width: 100%;
+    height: 50%;
+    background:linear-gradient(to bottom, #4E4E4E, #9B9B9B);
+    border-radius: 20px 20px 0 0;
+}
+.res_box_bottom{
+    width: 100%;
+    height: 50%;
+    background: #fff;
+    padding: 8%;
+    box-sizing: border-box;
+}
+.res_box_bottom h3{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 35px;
+}
+.res_box_bottom h3 span{
+    
+}
+.res_box_bottom p{
+    
+}
+/* *********************************************** */
 .gra{
     position: relative;
 }
