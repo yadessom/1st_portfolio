@@ -344,12 +344,14 @@ header ul li a{
     100%{top: 0;}
 }
 .about_pic{
-    width: 343px;
-    height: 343px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
     border: 13px solid #fff;
     position: absolute;
     top: -150%;
+    left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 118px;
     box-sizing: border-box;
     box-shadow: 30px 30px 50px rgba(0,0,0,.2);
