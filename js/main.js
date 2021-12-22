@@ -53,7 +53,7 @@ $(function(){
 			if(index ==5){
 				$('.res_box').addClass('on');
 			}else{
-				$('.res_box').removeClass('on');
+				$('.res_box').removeClass('on').removeClass('res_box_mouse');
 			}
 
 
@@ -88,6 +88,9 @@ $(function(){
 		let num = $(this).index();
 		$('.m_box_all').eq(num).addClass('remove').siblings().removeClass('remove');
 	});
-
+	$('.res_box').mouseenter(function(){
+		$(this).removeClass('on').addClass('res_box_mouse');
+		
+	});	
 
 });
