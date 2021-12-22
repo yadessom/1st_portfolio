@@ -796,7 +796,7 @@ header ul li a{
 .res_box_top{
     width: 100%;
     height: 50%;
-    background:linear-gradient(to bottom, #4E4E4E, #9B9B9B);
+    background:linear-gradient(to top, #4E4E4E, #9B9B9B);
     border-radius: 20px 20px 0 0;
 }
 .res_box_bottom{
@@ -805,17 +805,31 @@ header ul li a{
     background: #fff;
     padding: 8%;
     box-sizing: border-box;
+    border: 1px solid blue;
 }
 .res_box_bottom h3{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 25px;
+    display: inline-block;
+    color: #101010;
 }
 .res_box_bottom h3 span{
-    
+    opacity: .5;
 }
 .res_box_bottom p{
-    
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
+    display: inline-block;
+    float:right;
+    color: #101010;
+    opacity: .5;
+    font-weight: bold;
+}
+.res_box_bottom img{
+    display: block;
+    width: 90px;
 }
 /* *********************************************** */
 .gra{
