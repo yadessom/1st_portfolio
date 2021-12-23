@@ -199,7 +199,7 @@ header ul li a{
 }
 @keyframes home_ani{
     0%{transform: scale(0);}
-    100%{transform: scale(1);}
+    100%{transform: scale(0.8);}
 }
 .tit_top{
     overflow: hidden;
@@ -821,6 +821,24 @@ header ul li a{
 /* *********************************************** */
 .gra{
     position: relative;
+}
+.gra_txt{
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    z-index: 2;
+}
+.gra_txt h6{
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.gra_txt h7{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(255,255,255,.6);
+    line-height: 48px;
 }
 /* *********************************************** */
 .contact{
