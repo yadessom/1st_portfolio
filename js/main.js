@@ -74,6 +74,13 @@ $(function(){
 		$('.title').show(1000);
 		$('.m_btn').removeClass('on');
 	});
+	$('.full_menu ul li').click(function(){
+		$('.line').toggleClass('on');
+		$('.full_menu').toggleClass('on');
+		$('.blackout').toggleClass('on');
+		$('.title').show(1000);
+		$('.m_btn').removeClass('on');
+	});
 	// *************************************************************
 	$('.circle_01').click(function(){
 		$('.title').fadeOut(200);

@@ -442,13 +442,16 @@ header ul li a{
     height: 574px;
     border-radius: 10px;
     background:linear-gradient(to top,#3C3C3C, #777777);
-    padding: 59px 44px 0 44px;
+    padding: 65px 35px 0 35px;
     box-sizing: border-box;
     position: relative;
     box-shadow: 30px 30px 40px rgba(0,0,0,.3);
     overflow: hidden;
     transform: scale(70%);
     top: -150%
+}
+.web_box img{
+    width: 100%;
 }
 .w_box_01.on{
     animation: web_box_ani 1s ease forwards;
@@ -502,9 +505,8 @@ header ul li a{
     text-align: right;
 }
 .web_box_img{
-    margin-top: 195px;
-    margin-left: 107px;
-    width: 122px;
+    margin: 195px 33% 0 33%;
+    width: 33% !important;
 }
 /* *********************************************** */
 .mobile{
@@ -664,6 +666,7 @@ header ul li a{
 .m_box_all img{
     width: 100%;
     box-shadow: 20px 20px 20px rgba(0,0,0,.3);
+    border-radius: 20px;
 }
 .mobile_box_l{
     width:48%;
