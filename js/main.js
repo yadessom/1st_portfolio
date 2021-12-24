@@ -15,6 +15,7 @@ $(function(){
 				$('.title').addClass('on');
 			}else{
 				$('.title').removeClass('on');
+				$('.jumping').removeClass('on');
 				$('.title').show();
 			}
 			if(index == 2){
@@ -66,6 +67,7 @@ $(function(){
 		$('.blackout').toggleClass('on');
 		$('.title').show(1000);
 		$('.m_btn').toggleClass('on');
+		$('.jumping').removeClass('on');
     });
 	$('.blackout').click(function(){
 		$('.line').toggleClass('on');
@@ -84,6 +86,7 @@ $(function(){
 	// *************************************************************
 	$('.circle_01').click(function(){
 		$('.title').fadeOut(200);
+		$('.jumping').addClass('on');
 	});
 	// *************************************************************
 	$('.mobile_list li').mouseenter(function(){

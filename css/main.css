@@ -178,6 +178,20 @@ header ul li a{
 /* *********************************************** */
 .home{
     position: relative;
+    overflow: hidden;
+}
+.jumping{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100%;
+    width: 150px;
+    z-index: 10;
+
+    transition: all 1s cubic-bezier(0,.85,.6,1.51)
+}
+.jumping.on{
+    bottom: -120px;
 }
 .title{
     width: 975px;
