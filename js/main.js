@@ -16,6 +16,9 @@ $(function(){
 			}else{
 				$('.title').removeClass('on');
 				$('.jumping').removeClass('on');
+				$('.jumping_c').removeClass('on');
+				$('.jumping_c').hide('on');
+				$('.jumping_c').show('on');
 				$('.title').show();
 			}
 			if(index == 2){
@@ -56,6 +59,11 @@ $(function(){
 			}else{
 				$('.res_box').removeClass('on').removeClass('res_box_mouse');
 			}
+			if(index == 6){
+				$('.grid-item').addClass('on');
+			}else{
+				$('.grid-item').removeClass('on');
+			}
 
 
 		}
@@ -68,6 +76,7 @@ $(function(){
 		$('.title').show(1000);
 		$('.m_btn').toggleClass('on');
 		$('.jumping').removeClass('on');
+		$('.jumping_c').removeClass('on');
     });
 	$('.blackout').click(function(){
 		$('.line').toggleClass('on');
@@ -87,6 +96,7 @@ $(function(){
 	$('.circle_01').click(function(){
 		$('.title').fadeOut(200);
 		$('.jumping').addClass('on');
+		$('.jumping_c').addClass('on');
 	});
 	// *************************************************************
 	$('.mobile_list li').mouseenter(function(){
@@ -100,7 +110,55 @@ $(function(){
 	});
 	$('.res_box').mouseenter(function(){
 		$(this).removeClass('on').addClass('res_box_mouse');
-		
 	});	
+
+	// *************************************************************
+	$('.gra_gmenu div').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+    });
+
+    $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
+    
+    $('#gra_all').click(function(){
+        $('.grid').isotope({filter:'.grid-item'});
+    });
+    $('#gra_web').click(function(){
+        $('.grid').isotope({filter:'.gra_web'});
+    });
+    $('#gra_dev').click(function(){
+        $('.grid').isotope({filter:'.gra_dev'});
+    });
+    $('#gra_photo').click(function(){
+        $('.grid').isotope({filter:'.gra_photo'});
+    });
+    $('#gra_apps').click(function(){
+        $('.grid').isotope({filter:'.gra_apps'});
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
