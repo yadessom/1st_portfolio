@@ -468,7 +468,7 @@ header ul li a{
 .web_box{
     width: 395px;
     height: 574px;
-    border-radius: 5px;
+    border-radius: 10px;
     background:linear-gradient(to top,#3C3C3C, #777777);
     padding: 65px 35px 0 35px;
     box-sizing: border-box;
