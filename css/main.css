@@ -611,6 +611,11 @@ header ul li a{
     width: 304px;
     height: auto;
 }
+.m_box_all img{
+    width: 100%;
+    box-shadow: 20px 20px 20px rgba(0,0,0,.3);
+    border-radius: 10px;
+}
 .m_box_all.on{
     animation: m_box_ani 1s ease forwards;
 }
@@ -691,11 +696,6 @@ header ul li a{
     100%{left:83%;}
 }
 /* *********************************************** */
-.m_box_all img{
-    width: 100%;
-    box-shadow: 20px 20px 20px rgba(0,0,0,.3);
-    border-radius: 20px;
-}
 .mobile_box_l{
     width:48%;
     margin-top: 26px;
