@@ -902,12 +902,10 @@ header ul li a{
     background:#313131;
     font-weight: bold;
     box-sizing: border-box;
-    /* border:1px solid #313131; */
 }
 .gra_gmenu div.on a{
     color: #313131;
     background:#fff;
-    /* border:1px solid #313131; */
 }
 .grid{
     overflow: hidden;
@@ -921,8 +919,8 @@ header ul li a{
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
-    border: 1px solid rgba(255,255,255,.6);
+    /* box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    border: 1px solid rgba(255,255,255,.6); */
 }
 .grid-item{
     float:left;
