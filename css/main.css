@@ -808,7 +808,7 @@ header ul li a{
     box-sizing: border-box;
 }
 .res_box_top img{
-    width: 80%;
+    width: 85%;
     display: inline-block;
 }
 .res_box_mid{
@@ -882,7 +882,6 @@ header ul li a{
     top: 35%;
     transform: translateX(-50%);
     z-index: 10;
-    border:1px solid red;
 }
 /* *********************************************** */
 .gra_gmenu{
@@ -891,6 +890,9 @@ header ul li a{
 }
 .gra_gmenu div{
     display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
 }
 .gra_gmenu div a{
     display: block;
@@ -900,12 +902,12 @@ header ul li a{
     background:#313131;
     font-weight: bold;
     box-sizing: border-box;
-    border:1px solid #313131;
+    /* border:1px solid #313131; */
 }
 .gra_gmenu div.on a{
     color: #313131;
     background:#fff;
-    border:1px solid #313131;
+    /* border:1px solid #313131; */
 }
 .grid{
     overflow: hidden;
@@ -917,7 +919,10 @@ header ul li a{
     width: 1020px;
     height: 368px;
     margin: 0 auto;
-    border:1px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    border: 1px solid rgba(255,255,255,.6);
 }
 .grid-item{
     float:left;
@@ -929,28 +934,28 @@ header ul li a{
 /* *********************************************** */
 .gra_web{
     opacity: 0;
-    transition: all 0.5s 0.2s ease;
+    transition: all 1s 0.2s ease;
 }
 .gra_web.on{
     opacity: 1;
 }
 .gra_apps{
     opacity: 0;
-    transition: all 0.5s 0.4s ease;
+    transition: all 1.5s 0.4s ease;
 }
 .gra_apps.on{
     opacity: 1;
 }
 .gra_photo{
     opacity: 0;
-    transition: all 0.5s 0.6s ease;
+    transition: all 2s 0.6s ease;
 }
 .gra_photo.on{
     opacity: 1;
 }
 .gra_dev{
     opacity: 0;
-    transition: all 0.5s 0.8s ease;
+    transition: all 2.5s 0.8s ease;
 }
 .gra_dev.on{
     opacity: 1;
