@@ -533,8 +533,14 @@ header ul li a{
     text-align: right;
 }
 .web_box_img{
-    margin: 195px 33% 0 33%;
+    margin: 105px 33% 0 33%;
     width: 33% !important;
+}
+.web_box_bottom h5{
+    margin-top: 70px;
+    font-size: 21px;
+    line-height: 30px;
+    color: rgba(0,0,0,.8);
 }
 /* *********************************************** */
 .mobile{
@@ -550,6 +556,7 @@ header ul li a{
 .mobile p{
     display: block;
     font-size: 21px;
+    line-height: 30px;
     font-weight: bold;
     color: rgba(255,255,255,.4);
 }
@@ -697,14 +704,9 @@ header ul li a{
 }
 /* *********************************************** */
 .mobile_box_l{
-    width:48%;
+    width: 100%;
     margin-top: 26px;
     float:left;
-}
-.mobile_box_r{
-    width: 48%;
-    margin-top: 33px;
-    float:right;
 }
 /* *********************************************** */
 .mobile_txt{
