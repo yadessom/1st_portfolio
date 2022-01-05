@@ -377,10 +377,14 @@ header ul li a{
     margin-bottom: 118px;
     box-sizing: border-box;
     box-shadow: 30px 30px 50px rgba(0,0,0,.2);
+    overflow: hidden;
     z-index: 10;
 }
 .about_pic.on{
     animation: about_pic_ani 1.5s ease forwards;
+}
+.about_pic img{
+    width: 100%;   
 }
 @keyframes about_pic_ani{
     0%{top: -100%;}
